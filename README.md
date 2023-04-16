@@ -23,7 +23,7 @@ cd function_placement
 To use function_placement, you need to provide a configuration file in YAML format, which specifies the functions and the servers in the system, as well as their performance characteristics. An example configuration file is provided in the examples directory.
 
 Once you have a configuration file, you can run function_placement by executing the following command:
-python3 load_generator.py <function_name> <Series/Parallel> <Number of invocation> <Type of Algorithm>
+python3 load_generator.py <function_name> <Series/Parallel> <Number of invocation> <Type of Algorithm> <experiment Number>
 
 The algorithm parameter specifies the algorithm to use for function placement. Currently, the following algorithms are supported:
 
@@ -31,6 +31,7 @@ The algorithm parameter specifies the algorithm to use for function placement. C
 2. Series/Parallel: specifies whether you want to invoke the function in series or parallel. If you choose "Series", each invocation will be completed before the next one begins. If you choose "Parallel", all invocations will be started at the same time.
 3. Number of invocations: the total number of invocations you want to make on the function.
 4. Type of Algorithm: specifies the type of algorithm you want to use for node placement. This can be either "kalman", "extended", or "particle".
+5. experiment Number> to keep track of the experiments
 
 After running the load test, the tool will output the total execution time and also write the invocation timestamps to a CSV file named "loaddata.csv" in the same directory as the tool.
 
