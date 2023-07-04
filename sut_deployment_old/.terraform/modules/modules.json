@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"kubernetes_install","Source":"./install-kubernetes","Dir":"install-kubernetes"},{"Key":"virtual_machine_master","Source":"./compute-vm","Dir":"compute-vm"},{"Key":"virtual_machine_worker","Source":"./compute-vm","Dir":"compute-vm"}]}
